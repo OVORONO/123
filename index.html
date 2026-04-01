@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио — Главная</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="has-fixed-header">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <nav aria-label="Основная навигация">
+          <ul class="nav-main">
+            <li><a href="index.html" class="is-active">Главная</a></li>
+            <li><a href="skills.html">Обо мне</a></li>
+            <li><a href="projects.html">Проекты</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-full">
+        <div class="hero-box hero-box--home">
+          <div class="hero-parallax" aria-hidden="true">
+            <img id="heroMe" src="images/me.png" alt="" />
+          </div>
+          <h1 class="hero-overlay-text"><span class="hero-overlay-text-add">Вячеслав Шапран</span> Frontend разработчик со стажем.</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap text-center">
+          <h1>Немного обо мне</h1>
+          <p>
+            Я — фронтенд разработчик с страстью к созданию красивых, удобных и отзывчивых веб-интерфейсов.
+            Обладаю опытом работы с современными технологиями, такими как HTML, CSS, JavaScript, React и другими популярными фреймворками.
+            Для меня важно не только писать код, но и учитывать пользовательский опыт, создавать интерфейсы, которые удобно использовать.
+            Всегда открыт к новым вызовам и с удовольствием воплощаю ваши идеи в реальность.
+          </p>
+        </div>
+
+        <div class="alert-wrapper">
+          <div class="alert-box">
+            <img class="alert-icon" src="images/check.png" alt="check" />
+            <div class="alert-text">25+ выполнных заказов</div>
+          </div>
+          <div class="alert-box">
+            <img class="alert-icon" src="images/human.png" alt="human" />
+            <div class="alert-text">20 доволных клиентов</div>
+          </div>
+        </div>
+      </section>
+              
+      <section class="section" id="projects">
+        <div class="wrap text-center">
+          <h1>Избранные проекты</h1>
+        </div>
+        <div class="wrap">
+          <div class="project-row">
+            
+            <div class="project-row__text">
+            
+              <h2>Проект 1</h2>
+              <p class="project-row__subtitle">Future Tech - последние новости в технилогиях</p>
+              <p>
+                Сайт Future Tech обозревает последние новости и события происходящие в мире науки и технологии, повествует о возможностях в данной сфере и подробно знакомит с миром науки и техники.
+              </p>
+              <a class="btn-pill" href="project-1.html">ссылка на проект</a>
+            </div>
+            <div class="project-row__preview">
+              <div class="preview-box">
+                <img src="images/example_1.png" alt="Превью проекта 1" />
+              </div>
+            </div>
+          </div>
+
+          <div class="project-row project-row--reverse">
+            <div class="project-row__text">
+              <h2>Проект 2</h2>
+              <p class="project-row__subtitle">Family Tree - Сервис по созданию генеологических деревьев</p>
+              <p>
+                Сайт Family Tree представляет из себя сервис по созданию собственного генеалогического древа, на сайте предоставлены все необходимые возможности для погружения в данную сферу.
+              </p>
+              <a class="btn-pill btn-pill--accent" href="project-2.html">ссылка на проект</a>
+            </div>
+            <div class="project-row__preview">
+              <div class="preview-box">
+                <img src="images/example_2.png" alt="Превью проекта 2" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="wrap">
+          <h2 class="contact-block__title">Оставьте контактные данные</h2>
+          <form class="form-inline" action="#" method="post">
+            <label class="visually-hidden" for="name">Имя</label>
+            <input class="input-pill" id="name" name="name" type="text" placeholder="Имя" autocomplete="name" />
+            <label class="visually-hidden" for="email">Email</label>
+            <input class="input-pill" id="email" name="email" type="email" placeholder="Email" autocomplete="email" />
+            <button class="btn-submit" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="footer-left">
+          <span>© 2026 Портфолио. Все права защищены.</span>
+        </div>
+        <div class="footer-center">
+          <a class="social-circle" href="#" aria-label="Telegram">
+            <img src="images/tg.png" alt="TG" />
+          </a>
+          <a class="social-circle" href="#" aria-label="VK">
+            <img src="images/vk.png" alt="VK" />
+          </a>
+          <a class="social-circle" href="#" aria-label="YouTube">
+            <img src="images/youtube.png" alt="YouTube" />
+          </a>
+        </div>
+        <nav class="footer-right" aria-label="Подвал">
+          <a href="index.html" class="is-active">Главная</a>
+          <a href="skills.html">Обо мне</a>
+          <a href="projects.html">Проекты</a>
+          <a href="contacts.html">Контакты</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var el = document.getElementById("heroMe");
+        if (!el) return;
+        var prefersReduced =
+          window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (prefersReduced) return;
+        var speed = 0.25;
+
+        function update() {
+          var rect = el.getBoundingClientRect();
+          var center = (window.innerHeight || document.documentElement.clientHeight) / 2;
+          var dist = rect.top + rect.height / 2 - center;
+          el.style.transform = "translate3d(0," + -dist * speed + "px,0)";
+        }
+
+        update();
+        window.addEventListener("scroll", update, { passive: true });
+        window.addEventListener("resize", update);
+      })();
+    </script>
+  </body>
+</html>

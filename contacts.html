@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты — Портфолио</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="has-fixed-header">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <nav aria-label="Основная навигация">
+          <ul class="nav-main">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="skills.html">Навыки</a></li>
+            <li><a href="projects.html">Проекты</a></li>
+            <li><a href="contacts.html" class="is-active">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact-hero">
+        <h1>Способы связи со мной</h1>
+        <div class="inverted-text">
+          <p>
+            Если у вас есть вопросы, идеи для сотрудничества или предложения по материалам — я с радостью с вами свяжусь. На этой странице вы можете найти удобные способы связи со мной и оперативно получить ответ на любой запрос.
+          </p>
+          <p>
+            Напишите мне через форму обратной связи или используйте контактные данные ниже — я ценю ваше мнение и всегда открыт к новым обсуждениям.
+          </p>
+        </div>
+      </section>
+
+
+       <section class="section" id="projects">
+          <div class="alert-wrapper">
+            <div class="alert-box">
+              <img class="alert-icon" src="images/check.png" alt="check" />
+              <div class="alert-text">Рабочее время с 00.00 до 00.00</div>
+            </div>
+            <div class="alert-box">
+              <img class="alert-icon" src="images/human.png" alt="human" />
+              <div class="alert-text">+79999999999</div>
+            </div>
+            <div class="alert-box">
+              <img class="alert-icon" src="images/human.png" alt="human" />
+              <div class="alert-text">@ggg.mail.com</div>
+            </div>
+          </div>
+        </section>
+
+      <section class="contacts-grid" aria-label="Контакты и форма обратной связи">
+
+
+        <div class="contacts-grid__right">
+          <h2 class="contacts-form-title">Форма обратной связи</h2>
+          <div class="feedback-square">
+            <form class="feedback-form" action="#" method="post">
+              <label class="visually-hidden" for="fb-name">Имя</label>
+              <input
+                class="input-pill"
+                id="fb-name"
+                name="name"
+                type="text"
+                placeholder="Имя"
+                autocomplete="name"
+                required
+              />
+
+              <label class="visually-hidden" for="fb-email">Email</label>
+              <input
+                class="input-pill"
+                id="fb-email"
+                name="email"
+                type="email"
+                placeholder="Email"
+                autocomplete="email"
+                required
+              />
+
+              <label class="visually-hidden" for="fb-message">Сообщение</label>
+              <textarea
+                class="textarea-pill"
+                id="fb-message"
+                name="message"
+                placeholder="Привет..."
+                required
+              ></textarea>
+
+              <button class="btn-submit" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="footer-left">
+          <span>© 2026 Портфолио. Все права защищены.</span>
+        </div>
+        <div class="footer-center">
+          <a class="social-circle" href="#" aria-label="Telegram">
+            <img src="images/tg.png" alt="TG" />
+          </a>
+          <a class="social-circle" href="#" aria-label="VK">
+            <img src="images/vk.png" alt="VK" />
+          </a>
+          <a class="social-circle" href="#" aria-label="YouTube">
+            <img src="images/youtube.png" alt="YouTube" />
+          </a>
+        </div>
+        <nav class="footer-right" aria-label="Подвал">
+          <a href="index.html">Главная</a>
+          <a href="skills.html">Навыки</a>
+          <a href="projects.html">Проекты</a>
+          <a href="contacts.html" class="is-active">Контакты</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
